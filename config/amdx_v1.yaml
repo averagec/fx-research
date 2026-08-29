@@ -1,0 +1,42 @@
+strategy:
+  name: amdx_closeback_rebreak_v1
+  timeframe: M5
+  timezone: Asia/Singapore
+
+sessions:
+  day_start: "06:00"
+  asian_start: "06:00"
+  asian_end: "12:00"
+  trading_end: "23:55"
+
+signal:
+  closeback_max_fraction: 0.20
+  midpoint_reclaim_invalidates: true
+  first_valid_rebreak_only: true
+  setup_expiry_minutes: 180
+
+risk:
+  atr_period: 14
+  atr_multiplier: 2.0
+  target_r: 1.5
+  max_trades_per_day: 2
+  daily_realised_loss_stop_r: -1.0
+  one_trade_per_pair_per_day: true
+
+pair_rules:
+  EURUSD:
+    spread_max_pips: 0.8
+    max_stop_pips: 45
+    pip_size: 0.0001
+  GBPUSD:
+    spread_max_pips: 2.0
+    max_stop_pips: 45
+    pip_size: 0.0001
+  EURJPY:
+    spread_max_pips: 3.0
+    max_stop_pips: 60
+    pip_size: 0.01
+  GBPJPY:
+    spread_max_pips: 2.5
+    max_stop_pips: 80
+    pip_size: 0.01

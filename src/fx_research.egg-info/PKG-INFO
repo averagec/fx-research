@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: fx-research
+Version: 0.1.0
+Summary: Research pipeline for AMDX-style intraday FX continuation strategies
+Requires-Python: >=3.10
+Requires-Dist: pandas==2.2.3
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pyarrow==17.0.0
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: matplotlib==3.9.2
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: ruff>=0.5; extra == "dev"

@@ -1,0 +1,9 @@
+pandas==2.2.3
+numpy==1.26.4
+pyarrow==17.0.0
+PyYAML==6.0.2
+matplotlib==3.9.2
+
+[dev]
+pytest>=8.0
+ruff>=0.5

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fx-research"
+version = "0.1.0"
+description = "Research pipeline for AMDX-style intraday FX continuation strategies"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas==2.2.3",
+  "numpy==1.26.4",
+  "pyarrow==17.0.0",
+  "PyYAML==6.0.2",
+  "matplotlib==3.9.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

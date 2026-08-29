@@ -1,0 +1,6 @@
+backtest
+data
+features
+fxresearch
+reporting
+validation
